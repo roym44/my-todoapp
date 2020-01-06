@@ -8,7 +8,7 @@ node {
 		git 'https://github.com/roym44/MultibranchPipeline.git'
 	}
 	stage('Build') {
-		nodejs(nodeJSInstallationName: 'NodeJS') { 
+		nodejs(nodeJSInstallationName: 'nodejs') { 
 			sh label: '', script: '''
 			cd src
 			npm audit fix
@@ -17,7 +17,7 @@ node {
 			}
 	}
 	stage('Test') {
-		nodejs(nodeJSInstallationName: 'NodeJS') { 
+		nodejs(nodeJSInstallationName: 'nodejs') { 
 			sh label: '', script: '''
 			npm test
 		'''
