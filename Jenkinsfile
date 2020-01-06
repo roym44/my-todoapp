@@ -8,6 +8,7 @@ node {
    stage('test') {
      nodejs(nodeJSInstallationName: 'nodejs') {
         sh label: '', script: '''
+        cd src
         npm install --only=dev
         npm test 
         '''
