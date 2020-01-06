@@ -5,7 +5,7 @@ node {
     def registryCredential = 'frenzy669'
 	
 	stage('Git') {
-		git 'https://github.com/roym44/MultibranchPipeline.git'
+		git 'https://github.com/roym44/todoapp.git'
 	}
 	stage('Build') {
 		nodejs(nodeJSInstallationName: 'nodejs') { 
