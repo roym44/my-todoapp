@@ -16,7 +16,7 @@ node {
    }
    stage('docker build/push') {
      docker.withRegistry('https://index.docker.io/v1/', 'roym44') {
-       def app = docker.build("roym44/todoapp:${commit_id}", 'basics').push()
+       def app = docker.build("roym44/todoapp:${commit_id}", '.').push()
      }
    }
    stage('docker run') {
