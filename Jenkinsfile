@@ -2,7 +2,7 @@ node {
     def newApp
     def registry = 'https://registry-1.docker.io/v2/'
 	  def imagename = "frenzy669/roy"
-    def registryCredential = 'frenzy669'
+    def registryCredential = 'frenzy669' // ID which is found in the credentials
 	
 	stage('Git') {
 		git 'https://github.com/roym44/todoapp.git'
