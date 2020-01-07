@@ -1,7 +1,7 @@
 node {
     def newApp
     def registry = 'https://registry-1.docker.io/v2/'
-	def imagename = "roym44/MultibranchPipeline"
+	def imagename = "roym44/multibranchpipeline"
     def registryCredential = 'roym44' // ID which is found in the credentials in Jenkins
 	
 	stage('Git') {
